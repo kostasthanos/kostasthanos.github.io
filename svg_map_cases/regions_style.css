@@ -1,0 +1,350 @@
+/*General Style*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/*Page Information Buttons*/
+.infoGR,
+.infoEN,
+.namesInfo{
+    display: inline-block;
+    position: absolute;
+    top: .7em;
+    left: 1em;
+    font-size: 1.8em;
+    font-weight: bold;
+    border: 1px solid #247AEF;
+    border-radius: 8px;
+    padding: .3em .5em;
+    background-color: #FFF;
+    color: #247AEF;
+}
+
+.infoEN{
+    left: 4em;
+}
+
+.infoGR:hover,
+.infoEN:hover,
+.namesInfo:hover{
+    cursor: pointer;
+    background-color: #343434;
+}
+
+/*Information about the page and styles*/
+.details,
+.blockOfLists{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: none;
+    width: 60%;
+    height: auto;
+    padding: 2em;
+    border-radius: 8px;   
+    text-align: start; 
+    background-color: rgba(34, 34, 34, 0.9);
+    color: #d8d8d8;
+    font-size: 1.7em;
+    z-index: 9;  
+}
+
+.details h2{
+    font-size: 1.5em;
+    text-align: center;
+    color: #247AEF;
+    margin-bottom: .5em;
+}
+
+.details a{
+    text-decoration: none;
+    color: #247AEF;
+    font-weight: bold;
+}
+
+.exitGR,
+.exitEN,
+.exitLists{
+    margin: .2em 0 0 50%;
+    font-size: 2em;
+    background-color: transparent;
+    color: rgba(253, 219, 0, 0.77);    
+    border: 0;
+}
+
+.exitGR:hover,
+.exitEN:hover,
+.exitLists:hover{
+    cursor: pointer;
+    color: #bababa;
+}
+
+.exitGR::after,
+.exitEN::after,
+.exitLists::after{
+    display: block;
+    content: ' ';
+    margin-top: .2em;
+    width: .8em;
+    height: .07em;
+    background-color: rgba(253, 219, 0, 0.77);
+}
+
+/*Table (Lists) of region names in greek and english*/
+.namesInfo{
+    top: 3em;
+}
+
+.blockOfLists{ 
+    width:auto;
+}
+
+.blockOfLists table{
+    color: #d8d8d8;
+}
+
+.blockOfLists table td{
+    padding-bottom: .3em;
+}
+
+td:nth-child(2) {
+    padding-left: 4em;
+}
+
+/*General Container*/
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/*SVG map style*/
+.mapSvg,
+.perifBox{
+    margin-right: 2em;
+}
+
+.mapSvg{
+    margin-left: 1em;
+}
+
+path:hover{
+    cursor: pointer;
+}
+
+/*Regions and number of cases lists*/
+.lists{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.list-of-periferies,
+.number-of-cases{
+    list-style: none;
+    font-size: 1.6em;
+    margin-right: 1em;
+}
+
+.list-of-periferies li,
+.number-of-cases li{
+    padding: .2em;
+    margin: .5em 0;
+}
+
+/*Extra data and sources*/
+.extras{
+    display: flex;
+    flex-direction: column;
+}
+
+.cInfo{
+    margin: 0.5em 0em;
+    font-size: 1.5em; 
+    font-weight: bold;
+}
+
+.cInfo p{
+    padding: 0.5em;
+}
+
+.cInfo p::after{
+    content: "";
+    display: block;
+    height: 0.2em;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 0.5em;
+}
+
+.source{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    margin: 0.5em;
+    line-height: 2em;
+    background-color: rgba(222, 146, 1, 0.42);
+    border-radius: 2em;
+    box-shadow: 0px 0px 35px -10px rgba(0, 0, 0, 0.75);
+}
+
+.source:hover{
+    background-color: rgba(190, 127, 5, 0.42);
+}
+
+.source a{
+    text-decoration: none;
+    color: #247AEF;
+}
+
+#git{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#git a{
+    text-decoration: none;
+    color: #247AEF;
+}
+
+/*Info box for each region when hover with mouse over it*/
+.info_box{
+    position: absolute;
+    background-color: rgba(255,255,255, 0.7);
+    font-size: 1.4em;
+    border: .1em solid #000;
+    border-radius: 1em;
+    padding: 0.5em;
+    color: #221d38;
+}
+
+.info_box::first-line {
+    font-weight: bold;
+}
+
+.list-of-periferies li span.active {
+    background-color: #b7acac;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+path.active {
+    fill: #b7acac !important;
+    cursor: pointer;
+}
+
+/*Extra style settings*/
+.blur-filter {
+    filter: blur(3px);
+}
+
+#dataPlots{
+    display: inline-block;
+    position: relative;
+    bottom: 2em;
+    left: 1em;
+    font-size: 1.2em;
+}
+
+.toPlots:link,
+.toPlots:visited{
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid #247AEF;
+    border-radius: 8px;
+    padding: .3em .5em;
+    background-color: #FFF;
+    color: #247AEF;
+    text-decoration: none;
+}
+
+.toPlots:hover,
+.toPlots.active{
+    cursor: pointer;
+    background-color: #343434;
+}
+
+#sign{
+    position: relative;
+    bottom: 1em;
+    left: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*Some comfigurations for when screen size gets smaller on width*/
+/*@media SECTION*/
+@media screen and (max-width: 1252px){
+    .mapSvg,
+    .perifBox,
+    .extras{
+        transform: scale(.9);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .extras{
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    .all{
+        white-space: none;
+    }
+    
+    .mapSvg,
+    .perifBox,
+    .extras{
+        transform: scale(.8);
+        margin: -4em 0 0 -5em;;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    
+    .mapSvg,
+    .perifBox,
+    .extras{
+        transform: scale(.7);
+        margin: -7em 0 0 -8em;;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .perifBox,
+    .extras{
+        font-size: .8em;
+    }
+    
+    .perifBox li{
+        margin-bottom: 1em;
+    }
+    
+    .extras{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .all{
+        display: block;
+    }
+    .extras{
+        display: block;
+    }
+}

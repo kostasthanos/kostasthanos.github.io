@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Data plots of covid-19 in Greece and world.">
+	<meta name="author" content="Konstantinos Thanos">
+	<meta name="keywords" content="Covid-19, Greece, World, Covid-19-Greece, Covid-19-World, Covid-19-Data, Covid-19-Data-Plots">
+	    
+	<!--Title of page-->
+	<title>Cοvid-19 Data plots</title>
+        
+        <!--FontAwesome Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+	<!--Internal CSS style-->
+        <style>
+	    /*General style settings*/
+            *{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		outline: none;
+            }
+
+            :root{font-size: 10px;}
+
+            body{
+                font-family: sans-serif;
+                background-color: #111;
+                margin: 0;
+		color: #FFF;
+            }
+
+            a{text-decoration: none;}
+            
+            h1{font-size: 4.5em;}
+            
+            h1,h2{text-align: center; margin: 1em;}
+            
+            #back{
+                display: inline-block;
+                position: absolute;
+                left: .5em;
+                top: .5em;
+                font-size: 3em;
+            }
+
+            #back a:link,
+            #back a:visited{color: #247AEF;}
+
+            #back a:hover,
+            #back a:active{
+                cursor: pointer;
+                color: #FFF;
+            }
+            
+            .changePage{
+                background-color: #247AEF;
+                color: #FFF;
+                font-size: 1.4em;
+                border: 3px solid #1D1F21;
+                border-radius: 200px;
+                padding: .5em;
+                position: sticky;
+                bottom: 2em;
+                margin: 1em;
+                cursor: pointer;
+            }
+
+            .changePage:hover,
+            .changePage:active{
+                background-color: #FFF;
+                color: #247AEF;
+            }
+            
+            .plots_container, 
+            .plots_headers{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                text-transform: uppercase;           
+            }
+            
+            .plots_container{ margin: 2em 0em 3em 0em;}
+            
+            .plots{
+                width: 30em;
+                height: 30em;
+                border: 2px solid #AAA;
+                border-radius: 8px;
+            }
+            
+            /*Images from Pixabay*/
+            /*greece map : https://pixabay.com/vectors/greece-country-europe-flag-borders-1758825/*/
+            #greekPlots{
+                background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url("https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/greece_map.png");
+                background-size: cover;
+                opacity: 0.7;
+            }
+            
+            /*world globe : https://pixabay.com/vectors/world-earth-planet-globe-map-1301744/*/
+            #worldPlots{
+                background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url("https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/world_globe.png");
+                background-size: cover;
+                opacity: 0.7;
+            }
+            
+            #greekPlots:hover,
+            #worldPlots:hover{
+                opacity: 1;
+                border: 2px solid #247AEF;
+                box-shadow: 4px 9px 54px -11px rgba(165, 165, 165, 0.75);
+            }
+	
+	    p{font-size: 1.5em; text-align: center;margin: 3em 0em 0em 1em;}
+		
+	    .pix{color: #247AEF;}
+        </style>
+        
+    </head>
+    <body>
+        <div id="back">
+		<a href="https://kostasthanos.github.io/svg_map_cases/regions_index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+	    </div>
+        <h1>Covid-19 Data Plots</h1>
+        <div class="plots_headers">
+            <h2>Greece</h2>
+            <h2>World</h2>
+        </div>
+        
+        <div class="plots_container">
+            <a href="https://kostasthanos.github.io/svg_map_cases/Data_Plots/Categories/greek_plots.html" target="_blank" class="plots" id="greekPlots"></a>
+            <a href="https://kostasthanos.github.io/svg_map_cases/Data_Plots/Categories/world_plots.html" target="_blank" class="plots" id="worldPlots"></a>
+        </div>
+      
+	<p>(Earth photo from <a href="https://pixabay.com/el/users/GDJ-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1301744" class="pix">Gordon Johnson</a> from <a href="https://pixabay.com/el/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1301744" class="pix">Pixabay</a>)</p>
+	<a class="changePage"href="https://kostasthanos.github.io/svg_map_cases/regions_index.html">REGIONS</a>
+        <h2 style="font-size: 1.5em;">&copy;2020 Konstantinos Thanos. All Rights Reserved</h2>
+    </body>
+</html>    

@@ -1,0 +1,230 @@
+/*General style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    color: #d8d8d8;
+}
+
+a{
+    text-decoration: none;
+    color: #d8d8d8;
+}
+
+/*Header and Navigation bar*/
+header{
+    background: linear-gradient(to bottom right, #4b4b2b, #2d484e);
+    font-size: 2.2em;
+    text-align: center;
+    padding: 2.5em 0;   
+}
+
+#navbar{
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    display: flex;
+    justify-content: space-around;
+    padding: .8em 0em .8em .8em;
+}
+
+#navbar a:link,
+#navbar a:visited{
+    font-size: .8em;
+    width: 100px;
+    border: 2px solid #dd9309;
+    border-radius: 200px;
+    padding: .3em .1em;
+    margin-right: 1em;
+}
+
+#navbar a:hover{
+    background-color: transparent;
+    color: #dd9309;
+}
+
+/*Main page Section*/
+.mainPage{
+    display: inline-block;
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/back1.jpg); /*Background Image*/
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+
+/*Personal Info - GitHub Projects - Contact Info*/
+.about,
+.gitProjects,
+.contactInfo{
+    text-align: left;
+    line-height: 1.3em;
+    color: #FFF;
+    margin: 5% 15% 0% 15%;
+}
+
+.mainPage h3{
+    font-size: 1.5em;
+    text-align: center; 
+}
+
+.mainPage h3:after{
+    display: block;
+    content: "";
+    width: 4em;
+    height: .15em;
+    background-color: #dd9309; 
+    margin: .5em auto;
+}
+
+.about ul{
+    display:inline-block;
+    list-style: decimal inside;
+}
+
+/*GitHub Projects*/
+.gitprojects{
+    display: flex;
+}
+
+.box,
+.textBox{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.textBox p{
+    width: 10em;
+    text-align: center;
+}
+
+.box a{
+    width: 10em;
+    height: 8em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.box a:link,
+.box a:visited{
+    border: 2px solid #e6a000;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: border-radius 0.4s;
+}
+
+.box a:hover,
+.box a:active{
+    border: 2px solid #FFF;
+    border-radius: 50px;
+}
+
+.first{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/nsc.png);
+    background-size: cover;
+}
+
+.second{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/sncpp.png);
+    background-size: cover;
+}
+
+.third{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img//easter.png);
+    background-size: cover;
+}
+
+.fourth{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/Dice-Roller/master/imgs/playing.png);
+    background-size: cover;
+}
+
+.fifth{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/sci_calc.png);
+    background-size: cover;
+}
+
+
+.sixth{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/flag.png);
+    background-size: cover;
+}
+
+.seventh{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/Hand-Gestures-and-Finger-Counting/master/Images/defects.jpg);
+    background-size: cover;
+}
+
+.eighth{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/vkct.png);
+    background-size: cover;
+}
+
+.nineth{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/imroll.png);
+    background-size: cover;
+}
+
+.tenth{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/map.png);
+    background-size: cover;
+}
+
+.eleventh{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/drowsiness.png);
+    background-size: cover;    
+}
+
+.twelveth{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/virtual_draw.png);
+    background-size: cover;    
+}
+
+/*Contact Info*/
+.contactWays{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 0% 20% 0% 20%;
+}
+
+#contact a:link,
+#contact a:visited{
+    margin: 18% 0% 10% 0%;
+    border-width: auto;
+    font-size: 3em;
+    color: #FFF;
+}
+
+#contact a:hover,
+#contact a:active,
+i:hover{
+    color: #dd9309;
+}
+
+#copy h5{
+    text-align: center;
+    color: #FFF;
+    margin: 2em 0em 1em 0em;
+}
+
+.toTop{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    font-size: 1.7em;
+    transform: rotate(90deg);
+    color: #FFF;
+}
+
+.hide{
+    display: none;
+}
