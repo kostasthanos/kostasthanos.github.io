@@ -128,7 +128,7 @@ header{
 }
 
 .first{
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/nsc.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/Number-System-Converter/master/imgs/nsc.png);
     background-size: cover;
 }
 
