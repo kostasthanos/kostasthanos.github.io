@@ -91,7 +91,7 @@ mapPeri.forEach(function(p){
 // Latest json file with general data of covid-19 in Greece
 $.getJSON('https://raw.githubusercontent.com/kostasthanos/Covid-19-Regions-Greece/master/latest_data.json', function(latestData) {
     document.getElementById('ncases').innerHTML = latestData.Total_Cases;
-    document.getElementById('dinc').innerHTML = latestData.Daily_Increase;
+    document.getElementById('dinc').innerHTML = latestData.Daily_Change;
     if (parseFloat(latestData.Daily_Increase) < 1.0){
         document.getElementById('dinc').style.color = '#2ab149';
     }
