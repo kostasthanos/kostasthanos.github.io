@@ -100,7 +100,7 @@ $.getJSON('https://raw.githubusercontent.com/kostasthanos/Covid-19-Regions-Greec
     }
     document.getElementById('dcases').innerHTML = ' (' + latestData.Daily_Cases + ')';
     document.getElementById('dcases').style.color = '#c41b1b';
-    document.getElementById('upday').innerHTML = latestData.Dates + '/' + todayDate.getFullYear().toString();
+    document.getElementById('upday').innerHTML = latestData.Dates;
 });
 
 // Functions to open/close information boxes when buttons are pressed
