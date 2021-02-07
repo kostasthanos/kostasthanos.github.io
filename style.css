@@ -150,6 +150,8 @@ header{
 .fifth{
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://raw.githubusercontent.com/kostasthanos/kostasthanos.github.io/master/css/img/sci_calc.png);
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 
