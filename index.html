@@ -108,6 +108,37 @@
                 </div>
             </div>
             
+            <!-- ============================================  -->
+            <form class="contactForm" method="post" action="contact.php">
+                <h3>Send me a message</h3>
+                <input type="text" name="name" placeholder="Name" required autofocus><br/>
+                <input type="text" name="email" placeholder="Email" required autofocus><br/>
+                <input type="text" name="subject" placeholder="Subject"><br/>
+                <textarea name="message" placeholder="Message"></textarea><br/>
+                <button type="submit" name="submit">Submit</button>
+            </form>
+            <?php
+
+                if (isset($_POST["submit"])){
+                    $name = $_POST["name"];
+                    $subject = $_POST["subject"];
+                    $emailFrom = $_POST["email"];
+                    $message = $_POST["message"];
+
+                    $mailTo = "math11078@upnet.gr";
+
+                    $headers = "From: ".$emailFrom;
+                    $txt = "You have received an email from ".$name.".\n\n".$message;
+
+                    mail($mailTo, $subject, $txt, $headers);
+                    header("Location: contact.php?mailsend");
+
+                }
+
+             ?>
+            
+            <!-- ============================================  -->
+            
             <div class="contactInfo" id="contact">
                 <h3>Contact Info</h3>
                 <div class="contactWays">
