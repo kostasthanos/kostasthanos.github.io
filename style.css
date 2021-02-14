@@ -225,7 +225,7 @@ i:hover{
     font-size: 1.7em;
     transform: rotate(90deg);
     color: #FFF;
-    transition: 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 .hide{
